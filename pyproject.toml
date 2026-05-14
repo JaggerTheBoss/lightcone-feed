@@ -8,8 +8,7 @@ version = "0.1.0"
 description = "Strict-ordering bar feed for backtests and live strategies. Lookahead-proof by construction."
 readme = "README.md"
 requires-python = ">=3.9"
-license = "Apache-2.0"
-license-files = ["LICENSE"]
+license = { file = "LICENSE" }
 authors = [
     { name = "Jagger Jacobson", email = "jaggerjacobson21@gmail.com" }
 ]
