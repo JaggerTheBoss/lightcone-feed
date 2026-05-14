@@ -5,8 +5,9 @@
 
 *Only the past light cone influences the present.*
 
+[![PyPI version](https://img.shields.io/pypi/v/lightcone-feed)](https://pypi.org/project/lightcone-feed/)
 [![tests](https://github.com/JaggerTheBoss/lightcone-feed/actions/workflows/test.yml/badge.svg)](https://github.com/JaggerTheBoss/lightcone-feed/actions/workflows/test.yml)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/pypi/pyversions/lightcone-feed)](https://pypi.org/project/lightcone-feed/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 [![Zero dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen)](pyproject.toml)
 
