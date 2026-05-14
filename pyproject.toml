@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lightcone-feed"
+version = "0.1.0"
+description = "Strict-ordering bar feed for backtests and live strategies. Lookahead-proof by construction."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Jagger Jacobson", email = "jaggerjacobson21@gmail.com" }
+]
+keywords = [
+    "backtest",
+    "trading",
+    "ohlcv",
+    "bar-feed",
+    "lookahead",
+    "quantitative-finance",
+    "algorithmic-trading",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+]
+
+[project.urls]
+Homepage = "https://github.com/JaggerTheBoss/lightcone-feed"
+Documentation = "https://github.com/JaggerTheBoss/lightcone-feed/tree/main/docs"
+Issues = "https://github.com/JaggerTheBoss/lightcone-feed/issues"
+Source = "https://github.com/JaggerTheBoss/lightcone-feed"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lightcone*"]
+exclude = ["lightcone.tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["lightcone/tests"]
+python_files = ["test_*.py"]
